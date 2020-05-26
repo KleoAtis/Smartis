@@ -16,9 +16,9 @@ spring:
   datasource:
     platform: postgres
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/mydb
-    username: admin
-    password: admin   
+    url: jdbc:postgresql://localhost:5432/smartisdb
+    username: postgres
+    password: postgres   
 
 management:
   endpoints:
