@@ -6,7 +6,20 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka-credentials.username}:${eureka-credentials.password}@0.0.0.0:8761/eureka/
-      
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate.ddl-auto: create-drop
+    show-sql: true
+
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: foo
+    password: bar   
+
 management:
   endpoints:
     web:
