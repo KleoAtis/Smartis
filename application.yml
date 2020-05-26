@@ -17,8 +17,8 @@ spring:
     platform: postgres
     driverClassName: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/mydb
-    username: foo
-    password: bar   
+    username: admin
+    password: admin   
 
 management:
   endpoints:
