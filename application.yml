@@ -5,7 +5,7 @@ eureka-credentials:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://${eureka-credentials.username}:${eureka-credentials.password}@0.0.0.0:8761/eureka/
+      defaultZone: http://${eureka-credentials.username}:${eureka-credentials.password}@localhost:8761/eureka/
 
 spring:
   jpa:
