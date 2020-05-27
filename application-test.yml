@@ -1,0 +1,28 @@
+eureka-credentials:
+  username: admin
+  password: admin
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka-credentials.username}:${eureka-credentials.password}@0.0.0.0:8761/eureka/
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate.ddl-auto: update
+    show-sql: true
+
+  datasource:
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://db:5432/smartisdb
+    username: postgres
+    password: postgres   
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'   
