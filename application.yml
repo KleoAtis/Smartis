@@ -12,9 +12,6 @@ spring:
     database: POSTGRESQL
     hibernate.ddl-auto: update
     show-sql: true
-  profiles:
-    active:
-    - prod
 
   datasource:
     platform: postgres
